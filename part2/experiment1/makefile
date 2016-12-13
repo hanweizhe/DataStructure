@@ -1,5 +1,5 @@
 # this is make file
-main1.out:SqList.o main1.c
-	gcc main1.c SqList.o -o main1.out
+main2.out:SqList.o main2.c
+	gcc main2.c SqList.o -o main2.out
 SqList.o:SqList.c
 	gcc -c SqList.c
