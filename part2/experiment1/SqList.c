@@ -53,15 +53,17 @@ int FindList (List * L, int item)
 
 int DeleteList1 (List * L, int item)
 {
-	int i, rc;
+	int i, rc, cnt = 0;
 	rc = FindList(L, item);
-	if (rc != -1) {
+	while (rc != -1) {
 		for (i = rc; i < L->size-1; ++i) {
 			L->list[i] = L->list[i+1];
 		}
-		L->size--;	
+		L->size--;
+		cnt++;
+		rc = FindList(L, item);	
 	}
-	return rc;
+	return cnt;
 }
 
 int DeleteList2 (List * L, int rc)

@@ -1,3 +1,6 @@
+#ifndef _SQLIST_H_
+#define _SQLIST_H_
+
 /**
  * 定义线性表结构
  */
@@ -36,7 +39,7 @@ void OutputList (List * L);
 
 
 /**
- * 查找元素的位置
+ * 查找第一个符合元素的位置
  * @param  L    
  * @param  item 待查找元素
  * @return      >=0:元素位置,　-1:没找到
@@ -45,10 +48,10 @@ int FindList (List * L, int item);
 
 
 /**
- * 删除指定元素值的线性表记录，返回值>=0为删除成功
+ * 删除指定元素值的线性表记录，返回值>0为删除成功
  * @param  L    
  * @param  item 
- * @return      
+ * @return  删除个数    
  */
 int DeleteList1 (List * L, int item);
 
@@ -61,3 +64,4 @@ int DeleteList1 (List * L, int item);
  */
 int DeleteList2 (List * L, int rc);
 
+#endif

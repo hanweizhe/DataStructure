@@ -49,10 +49,10 @@ int main(void)
 			break;
 		}
 		r = DeleteList1(&L, i);
-		if (r < 0) {
+		if (r == 0) {
 			printf("没找到\n");
 		} else {
-			printf("有符合条件的元素，位置为：%d\n线性表为：\n", r+1);
+			printf("有符合条件的元素有%d个，\n删除后线性表为：\n", r);
 			OutputList(&L);
 		}
 	}
