@@ -38,8 +38,10 @@ void si_sort (int e[], int n)
 	int i, j, t;
 	//控制e[i],e[i+1],...e[n-1]的比较插入步骤
 	for (i = 1; i < n; ++i) {
-		//找结点e[i]的插入位置。
-		for (t = e[i], j = i-1; j >= 0 && t < e[j]; j--) {
+		//取出未排序序列中的第一个元素
+		t = e[i];	
+		for (j = i-1; j >= 0 && t < e[j]; j--) {
+			//找结点e[i]的插入位置。
 			e[j+1] = e[j];
 		}
 		e[j+1] = t;
@@ -116,7 +118,7 @@ void merge_pass (int e[], int a[], int n, int len)
 }
 
 /**
- * 归并排序
+ * 归并排序，稳定
  * @param e 待排数组
  * @param n 数组长度
  */
