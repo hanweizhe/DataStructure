@@ -129,12 +129,7 @@
 ***
 
 ### 第三部分　课程设计实验
-####1. 航空客运订票系统
-####2. 汉诺塔游戏程序
-####3. 全屏幕编辑程序设计
-####4. 旅游路线安排模拟系统
-####5. 停车场管理
-####6. [最小生成树的Kruskal算法](https://github.com/Anjaxs/DataStructure/blob/master/part3/Kruskal.c)
+#### [最小生成树的Kruskal算法](https://github.com/Anjaxs/DataStructure/blob/master/part3/Kruskal.c)
 
 
 ***
